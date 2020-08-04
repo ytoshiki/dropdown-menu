@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="card">
+    <p class="inst">Try to select an option with whatever tool you are using (e.g. mouse, touch, keyboard, etc...)<p>
+        <div class="select">
+          <span class="selectLabel" id="jobLabel"> Main job role</span>
+          <div class="selectWrapper">
+            <select class="selectNative js-selectNative" aria-labelledby="jobLabel">
+              <option value="sel" disabled="" selected=""> Select role...</span>
+              <option value="ds">UI/UX Designer</option>
+              <option value="fe">Frontend Engineer</option>
+              <option value="be">Backend Engineer</option>
+              <option value="qa">QA Engineer</option>
+              <option value="un">Unicorn</option>
+            </select>
+  
+            <!-- Hide the custom select from AT (e.g. SR) using aria-hidden -->
+            <div class="selectCustom js-selectCustom" aria-hidden="true">
+              <div class="selectCustom-trigger">Select role...</div>
+              <div class="selectCustom-options">
+                <div class="selectCustom-option" data-value="ds">UI/UX Designer</div>
+                <div class="selectCustom-option" data-value="fe">Frontend Engineer</div>
+                <div class="selectCustom-option" data-value="be">Backend Engineer</div>
+                <div class="selectCustom-option" data-value="qa">QA Engineer</div>
+                <div class="selectCustom-option" data-value="un">Unicorn</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="note">If you struggled to select an option, please reach out to me by e-mail at <a href="mailto:a.sandrina.p@gmail.com" class="link" target="_blank">a.sandrina.p@gmail.com</a>.</p>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
